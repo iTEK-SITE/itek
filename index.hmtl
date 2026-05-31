@@ -1,0 +1,265 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iTEK | AirPods</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Fondo moderno */
+body::before{
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    background:linear-gradient(135deg,#0066ff,#00d4ff);
+    border-radius:50%;
+    filter:blur(200px);
+    top:-200px;
+    left:-150px;
+    opacity:.25;
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:linear-gradient(135deg,#7b2cff,#00a2ff);
+    border-radius:50%;
+    filter:blur(180px);
+    bottom:-200px;
+    right:-100px;
+    opacity:.2;
+    z-index:-1;
+}
+
+header{
+    padding:25px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(15px);
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    letter-spacing:3px;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 8%;
+}
+
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+}
+
+.imagen{
+    flex:1;
+    min-width:300px;
+    text-align:center;
+}
+
+.imagen img{
+    width:100%;
+    max-width:500px;
+    filter:drop-shadow(0 0 40px rgba(0,170,255,.5));
+}
+
+.info{
+    flex:1;
+    min-width:300px;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 15px;
+    border-radius:30px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.1);
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:70px;
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.sub{
+    font-size:20px;
+    color:#bcbcbc;
+    margin-bottom:30px;
+}
+
+.precio{
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:30px;
+    background:linear-gradient(90deg,#00d4ff,#0066ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.btn{
+    display:inline-block;
+    padding:16px 35px;
+    border-radius:50px;
+    background:linear-gradient(135deg,#0066ff,#00d4ff);
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.features{
+    display:flex;
+    gap:15px;
+    margin-top:35px;
+    flex-wrap:wrap;
+}
+
+.feature{
+    padding:12px 18px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:15px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#8a8a8a;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:white;
+    font-size:32px;
+    box-shadow:0 0 30px rgba(37,211,102,.5);
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:50px;
+    }
+
+    .container{
+        text-align:center;
+    }
+
+    .features{
+        justify-content:center;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">iTEK</div>
+</header>
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="imagen">
+            <img src="https://smarttek.pe/wp-content/uploads/2026/01/AIRPODS-PRO-3-1.1_-600x600.png" alt="AirPods Pro">
+        </div>
+
+        <div class="info">
+
+            <div class="badge">
+                ✨ Producto Destacado
+            </div>
+
+            <h1>AirPods Pro 3 (3° Gen)</h1>
+
+            <p class="sub">
+                Sonido envolvente, cancelación activa de ruido
+                y la experiencia Apple que buscas.
+            </p>
+
+            <div class="precio">
+              Bs 340
+            </div>
+
+            <a
+            class="btn"
+            href="https://wa.me/59161598076?text=Hola%20iTEK,%20quiero%20información%20sobre%20los%20AirPods%20Pro"
+            target="_blank">
+                Comprar por WhatsApp
+            </a>
+
+            <div class="features">
+                <div class="feature">🎧 Sonido Premium</div>
+                <div class="feature">🔋 Gran Batería</div>
+                <div class="feature">🚚 Envíos a toda Bolivia</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 iTEK · WhatsApp +591 61598076
+</footer>
+
+<a
+class="whatsapp"
+href="https://wa.me/59163904221"
+target="_blank">
+💬
+</a>
+
+</body>
+</html>
